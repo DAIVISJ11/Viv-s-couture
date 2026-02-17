@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viv's Couture</title>
+    <link rel="stylesheet" href="viv's couture.Css">
+</head>
+    <div class="topnav">
+     <a  class="active" href="Viv's couture.Html" >Home</a>
+     <a href="About.HTML">About_us</a>
+     <a href="Gallery.Html">Gallery</a>
+     <a href="contact.HTML">Contact_us</a>
+  </div> 
+   <h1>Viv's Couture</h1>
+   <section>
+      <img src="PHOTO-2026-02-17-11-25-43 (1).jpg" alt="" class="My_Slides" style="width: 500px; height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43 (2).jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43 (3).jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43 (4).jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43 (5).jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43 (6).jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43 (7).jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43 (8).jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43 (9).jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43 (10).jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+      <img src="PHOTO-2026-02-17-11-25-43.jpg" alt="" class="My_Slides" style="width: 500px;  height: 700px;">
+   </section>
+   <p>
+        Welcome to Viv's couture, your creative studio in the palm of your hand. Whether you're sketching your first silhouette or refining a full collection, this app gives you the tools to design with confidence. Explore fabrics, experiment with colors, build moodboards, and bring your ideas to life through intuitive digital fashion tools.
+
+From concept to runway‑ready visuals, StyleForge helps you design smarter, faster, and with limitless imagination. Your next signature look starts here.
+    </p>
+   <div class="footer">
+        <footer>
+          <p>
+               <i>
+                 <ul>
+                    <li>Phone : +234 703 271 5585 </li>
+                    <li>Name : OJ</li>
+                 </ul>
+               </i>
+          </p>
+        </footer>
+    </div>
+    
+   <script>
+    var myIndex = 0;
+    carousel();
+    function carousel(){
+        var i;
+        var x = document.getElementsByClassName("My_Slides")
+
+        for (i=0; i < x.length; i++){
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1 }
+        x[myIndex-1].style.display = "block"
+        setTimeout(carousel, 3000);
+    }
+   </script>
+</body>
+</html>
